@@ -1,11 +1,12 @@
-﻿using System.ComponentModel;
+﻿using DDDInPractice.UI.Utils;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace DDDInPractice.UI.Common
 {
     public class ViewModel : INotifyPropertyChanged
     {
-        //protected static readonly DialogService _dialogService = new DialogService();
+        protected static readonly DialogService _dialogService = new DialogService();
         public event PropertyChangedEventHandler PropertyChanged;
 
         private bool? _dialogResult;
